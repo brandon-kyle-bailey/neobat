@@ -1,5 +1,5 @@
 require("neotest").setup({
-	discovery = {
-		enabled = false,
-	},
+  adapters = {
+    require("neotest-jest"),
+  },
 })

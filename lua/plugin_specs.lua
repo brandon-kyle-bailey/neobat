@@ -335,16 +335,13 @@ local plugin_specs = {
   -- Markdown previewing (only for Mac and Windows)
   {
     "iamcco/markdown-preview.nvim",
-    enabled = function()
-      if vim.g.is_win or vim.g.is_mac then
-        return true
-      end
-      return false
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
     end,
-    build = "cd app && npm install",
     ft = { "markdown" },
   },
-
   {
     "folke/zen-mode.nvim",
     cmd = "ZenMode",
@@ -491,6 +488,7 @@ local plugin_specs = {
   {
     "nvim-neotest/neotest",
     dependencies = {
+      'nvim-neotest/neotest-jest',
       "nvim-neotest/nvim-nio",
       "nvim-lua/plenary.nvim",
       "antoinemadec/FixCursorHold.nvim",
