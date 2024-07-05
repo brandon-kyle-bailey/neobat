@@ -488,6 +488,18 @@ local plugin_specs = {
       require("config.fidget-nvim")
     end,
   },
+  {
+    "nvim-neotest/neotest",
+    dependencies = {
+      "nvim-neotest/nvim-nio",
+      "nvim-lua/plenary.nvim",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-treesitter/nvim-treesitter"
+    },
+    config = function()
+      require("config.neotest")
+    end,
+  },
 }
 
 -- configuration for lazy itself.
