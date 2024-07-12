@@ -8,8 +8,15 @@ return {
       table.insert(
         opts.adapters,
         require("neotest-jest")({
-          jestCommand = "node node_modules/.bin/jest",
+          jestCommand = "npx jest",
           env = { CI = true },
+          cwd = function(file)
+            if string.find(file, "/packages/") then
+              -- match /*/packages/**/
+              return string.match(file, "(.*/packages/[^/]+/)")
+            end
+            return vim.fn.getcwd()
+          end,
         })
       )
     end,
