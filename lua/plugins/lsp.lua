@@ -3,6 +3,7 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      graphql = {},
       vtsls = {
         settings = {
           typescript = {
@@ -15,4 +16,3 @@ return {
     },
   },
 }
-
