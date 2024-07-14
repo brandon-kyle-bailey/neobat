@@ -3,6 +3,19 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      -- bashls = {},
+      -- docker_compose_language_service = {},
+      -- dockerls = {},
+      -- dotls = {},
+      -- gopls = {},
+      -- graphql = {},
+      -- html = {},
+      -- postgres_lsp = {},
+      -- prismals = {},
+      -- pyright = {},
+      -- rust_analyzer = {},
+      -- sqlls = {},
+      -- tailwindcss = {},
       jsonls = {
         -- lazy-load schemastore when needed
         on_new_config = function(new_config)
@@ -18,7 +31,6 @@ return {
           },
         },
       },
-      prismals = {},
       vtsls = {
         settings = {
           typescript = {
