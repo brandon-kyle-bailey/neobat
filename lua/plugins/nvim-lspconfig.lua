@@ -35,8 +35,8 @@ return {
         settings = {
           typescript = {
             preferences = {
-              importModuleSpecifier = "non-relative",
-              -- importModuleSpecifier = "relative",
+              -- importModuleSpecifier = "non-relative",
+              importModuleSpecifier = "relative",
             },
           },
         },
