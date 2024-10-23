@@ -5,3 +5,6 @@
 -- move 1/2 screen up/down and center vertically
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+vim.keymap.set("n", "j", "jzz")
+vim.keymap.set("n", "k", "kzz")
