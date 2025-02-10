@@ -27,7 +27,7 @@ return {
 
   ---@type Ollama.Config
   opts = {
-    model = "llama3.2",
+    model = "deepseek-r1:latest",
     -- your configuration overrides
   },
 }

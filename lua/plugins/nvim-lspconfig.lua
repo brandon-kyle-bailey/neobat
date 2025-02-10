@@ -6,6 +6,7 @@ return {
         settings = {
           typescript = {
             preferences = {
+              -- importModuleSpecifier = "absolute",
               importModuleSpecifier = "relative",
             },
           },
