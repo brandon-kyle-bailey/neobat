@@ -7,3 +7,5 @@ vim.opt.wrap = true -- Enable line wrapping
 vim.opt.spell = true
 vim.opt.spelllang = { "en" } -- Use English for spell checking
 vim.g.snacks_animate = false
+vim.g.autoformat = false
+vim.g.lazyvim_python_lsp = "pyright"
