@@ -9,3 +9,4 @@ vim.opt.spelllang = { "en" } -- Use English for spell checking
 vim.g.snacks_animate = false
 vim.g.autoformat = false
 vim.g.lazyvim_python_lsp = "pyright"
+-- vim.g.lazyvim_picker = "fzf"
