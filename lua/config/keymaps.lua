@@ -10,6 +10,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "j", "jzz")
 vim.keymap.set("n", "k", "kzz")
 
+vim.keymap.set("i", "jk", "<Esc>")
+
 -- buffer path copying to clipboard
 vim.keymap.set("n", "<leader>cp", function()
   vim.fn.setreg("+", vim.fn.expand("%"))
@@ -31,3 +33,7 @@ vim.keymap.set("n", "<leader>cud", function()
   local line = vim.api.nvim_get_current_line()
   vim.api.nvim_set_current_line(line:sub(1, col + 1) .. uuid .. line:sub(col + 2))
 end, { desc = "Generate and insert random UUID after cursor" })
+
+vim.keymap.set("i", "jk", "<Esc>")
+
+vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = false })
