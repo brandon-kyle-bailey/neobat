@@ -10,6 +10,5 @@ vim.opt.spelllang = { "en" }
 
 vim.g.snacks_animate = false
 
--- vim.g.autoformat = false
--- vim.g.lazyvim_python_lsp = "pyright"
--- vim.g.lazyvim_picker = "fzf"
+-- Motivation: Less clutter in completion windows and a more direct usage of snippits
+vim.g.lazyvim_mini_snippets_in_completion = true
